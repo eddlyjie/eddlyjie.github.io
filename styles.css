@@ -87,15 +87,20 @@ body::before {
 }
 
 .site-nav a:hover,
-.contact-links a:hover,
-.inline-link:hover {
+.contact-links a:hover {
   color: var(--accent-strong);
 }
 
 .inline-link {
-  color: var(--text);
+  color: #2f4f6f;
   font-weight: 700;
   text-decoration: none;
+}
+
+.inline-link:visited,
+.inline-link:hover,
+.inline-link:focus-visible {
+  color: #2f4f6f;
 }
 
 .hero,
