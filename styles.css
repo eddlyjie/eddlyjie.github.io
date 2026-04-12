@@ -93,14 +93,16 @@ body::before {
 }
 
 .inline-link {
-  color: var(--accent);
+  color: var(--text);
   font-weight: 700;
+  text-decoration: none;
 }
 
 .hero,
 .section-grid,
 .split-section,
-.contact-banner {
+.contact-banner,
+.site-footer {
   margin-bottom: 24px;
 }
 
@@ -114,7 +116,8 @@ body::before {
 .profile-card,
 .section-grid,
 .updates-panel,
-.contact-banner {
+.contact-banner,
+.site-footer {
   background: var(--paper);
   backdrop-filter: blur(18px);
   border: 1px solid rgba(255, 255, 255, 0.72);
@@ -322,6 +325,17 @@ h1 {
   gap: 0;
 }
 
+.site-footer {
+  padding: 18px 24px;
+}
+
+.site-footer p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  text-align: right;
+}
+
 .split-section {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -410,7 +424,8 @@ h1 {
   .hero-copy,
   .profile-card,
   .section-grid,
-  .contact-banner {
+  .contact-banner,
+  .site-footer {
     padding: 22px;
     border-radius: 22px;
   }
