@@ -87,8 +87,14 @@ body::before {
 }
 
 .site-nav a:hover,
-.contact-links a:hover {
+.contact-links a:hover,
+.inline-link:hover {
   color: var(--accent-strong);
+}
+
+.inline-link {
+  color: var(--accent);
+  font-weight: 700;
 }
 
 .hero,
@@ -240,6 +246,10 @@ h1 {
 .profile-meta div {
   padding-top: 16px;
   border-top: 1px solid var(--line);
+}
+
+.profile-meta dd + dd {
+  margin-top: 4px;
 }
 
 .profile-meta dt {
