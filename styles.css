@@ -5,10 +5,10 @@
   --text: #1e2430;
   --muted: #566070;
   --line: rgba(30, 36, 48, 0.12);
-  --accent: #0d6b63;
-  --accent-soft: #d7eee7;
-  --accent-strong: #0a4d48;
-  --shadow: 0 24px 60px rgba(35, 37, 41, 0.12);
+  --accent: #c85a36;
+  --accent-soft: #f5d7c6;
+  --accent-strong: #9a3d24;
+  --shadow: 0 24px 60px rgba(84, 44, 28, 0.12);
 }
 
 * {
@@ -25,9 +25,9 @@ body {
   font-family: "Manrope", sans-serif;
   color: var(--text);
   background:
-    radial-gradient(circle at top left, rgba(13, 107, 99, 0.18), transparent 30%),
-    radial-gradient(circle at right 20%, rgba(216, 142, 72, 0.14), transparent 25%),
-    linear-gradient(180deg, #f8f3ea 0%, #efe6d8 100%);
+    radial-gradient(circle at top left, rgba(200, 90, 54, 0.16), transparent 30%),
+    radial-gradient(circle at right 20%, rgba(181, 62, 45, 0.12), transparent 25%),
+    linear-gradient(180deg, #fbf2e8 0%, #f1e0cf 100%);
 }
 
 body::before {
@@ -203,7 +203,7 @@ h1 {
 }
 
 .quick-facts li {
-  padding: 10px 14px;
+  padding: 12px 18px;
   border-radius: 999px;
   background: var(--accent-soft);
   color: var(--accent-strong);
@@ -255,6 +255,7 @@ h1 {
 .profile-meta dt {
   margin-bottom: 4px;
   font-weight: 700;
+  color: var(--accent-strong);
 }
 
 .section-grid {
@@ -283,7 +284,8 @@ h1 {
 .info-card {
   padding: 22px;
   border-radius: 22px;
-  background: rgba(255, 255, 255, 0.55);
+  background:
+    linear-gradient(180deg, rgba(255, 247, 242, 0.9), rgba(255, 250, 246, 0.72));
   border: 1px solid var(--line);
 }
 
@@ -313,6 +315,11 @@ h1 {
 .publication-links {
   color: var(--accent-strong);
   font-weight: 700;
+}
+
+.activity-list {
+  display: grid;
+  gap: 0;
 }
 
 .split-section {
@@ -380,7 +387,6 @@ h1 {
 @media (max-width: 900px) {
   .hero,
   .section-grid,
-  .split-section,
   .contact-banner {
     grid-template-columns: 1fr;
   }
@@ -404,7 +410,6 @@ h1 {
   .hero-copy,
   .profile-card,
   .section-grid,
-  .updates-panel,
   .contact-banner {
     padding: 22px;
     border-radius: 22px;
@@ -420,7 +425,6 @@ h1 {
   }
 
   .section-heading h2,
-  .updates-panel h2,
   .contact-banner h2 {
     font-size: 1.7rem;
   }
