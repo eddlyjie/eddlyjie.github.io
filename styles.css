@@ -1,14 +1,14 @@
 :root {
-  --bg: #f4efe7;
-  --paper: rgba(255, 252, 247, 0.84);
-  --paper-strong: #fffaf2;
-  --text: #1e2430;
-  --muted: #566070;
-  --line: rgba(30, 36, 48, 0.12);
-  --accent: #c85a36;
-  --accent-soft: #f5d7c6;
-  --accent-strong: #9a3d24;
-  --shadow: 0 24px 60px rgba(84, 44, 28, 0.12);
+  --bg: #edf3fb;
+  --paper: rgba(255, 255, 255, 0.84);
+  --paper-strong: #ffffff;
+  --text: #11233c;
+  --muted: #4b5f79;
+  --line: rgba(0, 61, 124, 0.14);
+  --accent: #ef7c00;
+  --accent-soft: #fff0df;
+  --accent-strong: #003d7c;
+  --shadow: 0 24px 60px rgba(0, 38, 77, 0.14);
 }
 
 * {
@@ -25,9 +25,9 @@ body {
   font-family: "Manrope", sans-serif;
   color: var(--text);
   background:
-    radial-gradient(circle at top left, rgba(200, 90, 54, 0.16), transparent 30%),
-    radial-gradient(circle at right 20%, rgba(181, 62, 45, 0.12), transparent 25%),
-    linear-gradient(180deg, #fbf2e8 0%, #f1e0cf 100%);
+    radial-gradient(circle at top left, rgba(0, 61, 124, 0.18), transparent 30%),
+    radial-gradient(circle at right 20%, rgba(239, 124, 0, 0.14), transparent 25%),
+    linear-gradient(180deg, #f7fbff 0%, #e3edf8 100%);
 }
 
 body::before {
@@ -54,9 +54,9 @@ body::before {
   gap: 24px;
   padding: 18px 22px;
   margin-bottom: 24px;
-  background: rgba(255, 250, 242, 0.72);
+  background: rgba(255, 255, 255, 0.72);
   backdrop-filter: blur(14px);
-  border: 1px solid rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.82);
   border-radius: 22px;
   box-shadow: var(--shadow);
 }
@@ -92,7 +92,7 @@ body::before {
 }
 
 .inline-link {
-  color: #2f4f6f;
+  color: var(--accent-strong);
   font-weight: 700;
   text-decoration: none;
 }
@@ -100,7 +100,7 @@ body::before {
 .inline-link:visited,
 .inline-link:hover,
 .inline-link:focus-visible {
-  color: #2f4f6f;
+  color: var(--accent-strong);
 }
 
 .hero,
@@ -125,7 +125,7 @@ body::before {
 .site-footer {
   background: var(--paper);
   backdrop-filter: blur(18px);
-  border: 1px solid rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.8);
   border-radius: 28px;
   box-shadow: var(--shadow);
 }
@@ -185,7 +185,7 @@ h1 {
 
 .button.primary {
   color: #fff;
-  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-strong) 100%);
+  background: linear-gradient(135deg, var(--accent-strong) 0%, var(--accent) 100%);
 }
 
 .button.secondary {
@@ -293,7 +293,7 @@ h1 {
   padding: 22px;
   border-radius: 22px;
   background:
-    linear-gradient(180deg, rgba(255, 247, 242, 0.9), rgba(255, 250, 246, 0.72));
+    linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(235, 243, 252, 0.78));
   border: 1px solid var(--line);
 }
 
@@ -383,7 +383,7 @@ h1 {
   align-items: center;
   padding: 36px;
   background:
-    linear-gradient(135deg, rgba(255, 252, 247, 0.9), rgba(228, 244, 241, 0.92)),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.94), rgba(231, 240, 250, 0.92)),
     var(--paper);
 }
 
