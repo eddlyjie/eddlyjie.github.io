@@ -256,13 +256,15 @@ h1 {
 }
 
 .intro-copy {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 26px;
+  max-width: 760px;
   color: #303946;
 }
 
 .intro-copy p {
+  margin-bottom: 16px;
+}
+
+.intro-copy p:last-child {
   margin-bottom: 0;
 }
 
@@ -522,7 +524,6 @@ footer p {
     flex-wrap: wrap;
   }
 
-  .intro-copy,
   .education-grid,
   .research-grid {
     grid-template-columns: 1fr;
