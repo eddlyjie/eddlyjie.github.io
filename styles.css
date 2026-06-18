@@ -168,6 +168,7 @@ h1 {
 }
 
 .contact-list a {
+  min-width: 0;
   min-height: 38px;
   display: flex;
   align-items: center;
@@ -180,6 +181,7 @@ h1 {
   border: 1px solid var(--line);
   border-radius: 6px;
   background: var(--surface-strong);
+  overflow-wrap: anywhere;
   transition: border-color 0.16s ease, transform 0.16s ease, color 0.16s ease;
 }
 
