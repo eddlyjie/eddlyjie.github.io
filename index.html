@@ -4,96 +4,133 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yijie Liao</title>
-  <meta name="description" content="Yijie Liao — Incoming PhD Student at NUS in robotics, control, and learning.">
+  <meta name="description" content="Yijie Liao — Incoming PhD Student at NUS, working on control and learning for robotics.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <header class="nav-bar">
+  <nav>
     <div class="nav-inner">
-      <a class="nav-name" href="#">Yijie Liao</a>
-      <nav>
+      <a class="nav-brand" href="#">Yijie Liao</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
         <a href="#publications">Publications</a>
         <a href="#research">Research</a>
-        <a href="mailto:lyjie@umich.edu">Contact</a>
-      </nav>
+      </div>
     </div>
-  </header>
+  </nav>
 
-  <main class="page">
+  <main>
 
-    <section class="hero-card">
-      <img src="assets/Yijie.jpg" alt="Yijie Liao" class="hero-photo">
-      <div class="hero-text">
-        <p class="eyebrow">Incoming PhD Student &middot; Computer Science</p>
-        <h1>Yijie&nbsp;Liao</h1>
-        <p class="affiliation">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
-          National University of Singapore
-        </p>
-        <p class="bio">
-          Joining <a href="https://linsats.github.io/" target="_blank" rel="noreferrer">Prof. Shao Lin's group</a> at NUS. My research sits at the intersection of <strong>control</strong>, <strong>learning</strong>, and <strong>robotics</strong>—with a focus on humanoid manipulation, autonomous driving, and safety-critical systems.
-        </p>
-        <p class="bio">
-          Dual undergraduate degrees from the <strong>UM-SJTU Joint Institute</strong>: B.Eng. Mechanical Engineering (SJTU) and B.S.E. Computer Engineering (University of Michigan). Previously with <a href="https://rap-lab.github.io/" target="_blank" rel="noreferrer">Prof. Zhongqiang Ren</a>, <a href="https://websites.umich.edu/~tersal/" target="_blank" rel="noreferrer">Prof. Tulga Ersal</a>, and <a href="https://icontrol.ri.cmu.edu/people/changliu.html" target="_blank" rel="noreferrer">Prof. Changliu Liu</a>.
-        </p>
-        <div class="pill-row">
-          <a class="pill primary" href="mailto:lyjie@umich.edu">Email</a>
-          <!-- <a class="pill" href="">Google Scholar</a> -->
-          <!-- <a class="pill" href="">GitHub</a> -->
-          <!-- <a class="pill" href="">CV</a> -->
+    <!-- ── PROFILE ────────────────────────────────── -->
+    <section id="about" class="profile-section">
+      <div class="profile-photo-wrap">
+        <img src="assets/Yijie.jpg" alt="Yijie Liao" class="profile-photo">
+        <h1 class="profile-name">Yijie Liao</h1>
+        <p class="profile-role">Incoming PhD Student</p>
+        <p class="profile-inst">Computer Science</p>
+        <p class="profile-inst">National University of Singapore</p>
+
+        <div class="social-row">
+          <a href="mailto:lyjie@umich.edu" title="Email">
+            <!-- email icon -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+            Email
+          </a>
+          <!-- Uncomment and fill in your links:
+          <a href="" title="Google Scholar">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 10a8 8 0 0 1 7.162 3.44L24 9.5 12 0z"/></svg>
+            Scholar
+          </a>
+          <a href="" title="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            GitHub
+          </a>
+          <a href="" title="CV">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            CV
+          </a>
+          -->
         </div>
+      </div>
+
+      <div class="profile-bio">
+        <p>
+          I am an incoming PhD student in Computer Science at the
+          <strong>National University of Singapore</strong>, where I will join
+          <a href="https://linsats.github.io/" target="_blank" rel="noreferrer">Prof. Shao Lin's group</a>.
+          My research lies at the intersection of <strong>control</strong>, <strong>learning</strong>,
+          and <strong>robotics</strong>, with a focus on humanoid manipulation,
+          autonomous driving, and safety-critical systems.
+        </p>
+        <p>
+          I received dual undergraduate degrees from the <strong>UM-SJTU Joint Institute</strong>:
+          B.Eng. in Mechanical Engineering from Shanghai Jiao Tong University and
+          B.S.E. in Computer Engineering from the University of Michigan.
+          I have been fortunate to work with
+          <a href="https://rap-lab.github.io/" target="_blank" rel="noreferrer">Prof. Zhongqiang Ren</a> (SJTU),
+          <a href="https://websites.umich.edu/~tersal/" target="_blank" rel="noreferrer">Prof. Tulga Ersal</a> (UMich), and
+          <a href="https://icontrol.ri.cmu.edu/people/changliu.html" target="_blank" rel="noreferrer">Prof. Changliu Liu</a> (CMU).
+        </p>
       </div>
     </section>
 
-    <section class="card" id="publications">
+    <!-- ── PUBLICATIONS ────────────────────────────── -->
+    <section id="publications">
       <h2>Publications</h2>
 
-      <div class="pub">
-        <div class="pub-badge iros">IROS<br>2026</div>
-        <div class="pub-body">
-          <p class="pub-title">Deep Reinforcement-Learning-Guided Model Predictive Control for Preventing Overtakes in Autonomous Racing</p>
-          <p class="pub-authors">Yufei Xi<sup>*</sup>, <strong>Yijie Liao</strong><sup>*</sup>, Tulga Ersal<sup>&dagger;</sup></p>
-          <p class="pub-venue">IEEE/RSJ International Conference on Intelligent Robots and Systems &nbsp;&middot;&nbsp; <em>*Equal contribution &nbsp; &dagger;Corresponding author</em></p>
+      <div class="pub-item">
+        <div class="pub-year">2026</div>
+        <div class="pub-content">
+          <p class="pub-title">
+            Deep Reinforcement-Learning-Guided Model Predictive Control for Preventing Overtakes in Autonomous Racing
+          </p>
+          <p class="pub-authors">
+            Yufei Xi<sup>*</sup>, <span class="me">Yijie Liao</span><sup>*</sup>, Tulga Ersal<sup>†</sup>
+            <span class="pub-note">(*Equal contribution &nbsp;†Corresponding author)</span>
+          </p>
+          <p class="pub-venue">
+            <em>IEEE/RSJ International Conference on Intelligent Robots and Systems</em>
+            <span class="venue-tag">IROS 2026</span>
+          </p>
         </div>
       </div>
 
-      <div class="pub">
-        <div class="pub-badge icra">ICRA<br>2025</div>
-        <div class="pub-body">
-          <p class="pub-title">Search-Based Path Planning in Interactive Environments among Movable Obstacles</p>
-          <p class="pub-authors">Zhongqiang Ren, Bunyod Suvonov, Guofei Chen, Botao He, <strong>Yijie Liao</strong>, Cornelia Fermuller, Ji Zhang</p>
-          <p class="pub-venue">IEEE International Conference on Robotics and Automation</p>
+      <div class="pub-item">
+        <div class="pub-year">2025</div>
+        <div class="pub-content">
+          <p class="pub-title">
+            Search-Based Path Planning in Interactive Environments among Movable Obstacles
+          </p>
+          <p class="pub-authors">
+            Zhongqiang Ren, Bunyod Suvonov, Guofei Chen, Botao He, <span class="me">Yijie Liao</span>, Cornelia Fermuller, Ji Zhang
+          </p>
+          <p class="pub-venue">
+            <em>IEEE International Conference on Robotics and Automation</em>
+            <span class="venue-tag">ICRA 2025</span>
+          </p>
         </div>
       </div>
 
     </section>
 
-    <section class="card" id="research">
+    <!-- ── RESEARCH ────────────────────────────────── -->
+    <section id="research">
       <h2>Research Interests</h2>
-      <div class="research-grid">
-        <div class="research-item">
-          <h3>Humanoid Manipulation</h3>
-          <p>Dexterous manipulation in dynamic and cluttered environments.</p>
-        </div>
-        <div class="research-item">
-          <h3>Autonomous Driving</h3>
-          <p>Decision-making and control under uncertainty and human interaction.</p>
-        </div>
-        <div class="research-item">
-          <h3>Safety &amp; World Models</h3>
-          <p>Learning models for safety-aware planning and control.</p>
-        </div>
-      </div>
+      <ul class="research-list">
+        <li><strong>Humanoid Manipulation</strong> — dexterous manipulation in dynamic and cluttered environments</li>
+        <li><strong>Autonomous Driving</strong> — decision-making and control under uncertainty and human interaction</li>
+        <li><strong>Safety-Critical World Models</strong> — learning models for safety-aware planning and control</li>
+      </ul>
     </section>
 
   </main>
 
-  <footer class="site-footer">
-    <p>Updated June 2026</p>
+  <footer>
+    <p>Updated June 2026 &nbsp;·&nbsp; <a href="mailto:lyjie@umich.edu">lyjie@umich.edu</a></p>
   </footer>
 
 </body>
