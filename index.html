@@ -4,134 +4,173 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yijie Liao</title>
-  <meta name="description" content="Yijie Liao — Incoming PhD Student at NUS, working on control and learning for robotics.">
+  <meta name="description" content="Yijie Liao - Incoming PhD student at NUS working on control, learning, and robotics.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="site-shell">
+    <aside class="profile-panel" aria-label="Profile">
+      <a class="skip-home" href="#about">Homepage</a>
 
-  <nav>
-    <div class="nav-inner">
-      <a class="nav-brand" href="#">Yijie Liao</a>
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#publications">Publications</a>
-        <a href="#research">Research</a>
+      <img src="assets/Yijie.jpg" alt="Yijie Liao" class="profile-photo">
+
+      <div class="profile-heading">
+        <p class="eyebrow">Robotics & Control</p>
+        <h1>Yijie Liao</h1>
+        <p class="role">Incoming PhD Student</p>
+        <p class="affiliation">Computer Science<br>National University of Singapore</p>
       </div>
-    </div>
-  </nav>
 
-  <main>
-
-    <!-- ── PROFILE ────────────────────────────────── -->
-    <section id="about" class="profile-section">
-      <div class="profile-photo-wrap">
-        <img src="assets/Yijie.jpg" alt="Yijie Liao" class="profile-photo">
-        <h1 class="profile-name">Yijie Liao</h1>
-        <p class="profile-role">Incoming PhD Student</p>
-        <p class="profile-inst">Computer Science</p>
-        <p class="profile-inst">National University of Singapore</p>
-
-        <div class="social-row">
-          <a href="mailto:lyjie@umich.edu" title="Email">
-            <!-- email icon -->
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+      <ul class="contact-list" aria-label="Contact links">
+        <li>
+          <a href="mailto:lyjie@umich.edu">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 6.5h15a1.5 1.5 0 0 1 1.5 1.5v8a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 16V8a1.5 1.5 0 0 1 1.5-1.5Zm.7 1.7 6.8 5 6.8-5"/></svg>
             Email
           </a>
-          <!-- Uncomment and fill in your links:
-          <a href="" title="Google Scholar">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 10a8 8 0 0 1 7.162 3.44L24 9.5 12 0z"/></svg>
-            Scholar
-          </a>
-          <a href="" title="GitHub">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+        </li>
+        <li>
+          <a href="https://github.com/eddlyjie" target="_blank" rel="noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8a9.2 9.2 0 0 0-2.9 17.9c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.2-3.4-1.2-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.4-1.1.7-1.3-2.2-.3-4.6-1.1-4.6-4.9 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.8 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.8-2.3 4.6-4.6 4.9.4.3.7.9.7 1.8v2.7c0 .3.2.6.7.5A9.2 9.2 0 0 0 12 2.8Z"/></svg>
             GitHub
           </a>
-          <a href="" title="CV">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-            CV
-          </a>
-          -->
-        </div>
-      </div>
-
-      <div class="profile-bio">
-        <p>
-          I am an incoming PhD student in Computer Science at the
-          <strong>National University of Singapore</strong>, where I will join
-          <a href="https://linsats.github.io/" target="_blank" rel="noreferrer">Prof. Shao Lin's group</a>.
-          My research lies at the intersection of <strong>control</strong>, <strong>learning</strong>,
-          and <strong>robotics</strong>, with a focus on humanoid manipulation,
-          autonomous driving, and safety-critical systems.
-        </p>
-        <p>
-          I received dual undergraduate degrees from the <strong>UM-SJTU Joint Institute</strong>:
-          B.Eng. in Mechanical Engineering from Shanghai Jiao Tong University and
-          B.S.E. in Computer Engineering from the University of Michigan.
-          I have been fortunate to work with
-          <a href="https://rap-lab.github.io/" target="_blank" rel="noreferrer">Prof. Zhongqiang Ren</a> (SJTU),
-          <a href="https://websites.umich.edu/~tersal/" target="_blank" rel="noreferrer">Prof. Tulga Ersal</a> (UMich), and
-          <a href="https://icontrol.ri.cmu.edu/people/changliu.html" target="_blank" rel="noreferrer">Prof. Changliu Liu</a> (CMU).
-        </p>
-      </div>
-    </section>
-
-    <!-- ── PUBLICATIONS ────────────────────────────── -->
-    <section id="publications">
-      <h2>Publications</h2>
-
-      <div class="pub-item">
-        <div class="pub-year">2026</div>
-        <div class="pub-content">
-          <p class="pub-title">
-            Deep Reinforcement-Learning-Guided Model Predictive Control for Preventing Overtakes in Autonomous Racing
-          </p>
-          <p class="pub-authors">
-            Yufei Xi<sup>*</sup>, <span class="me">Yijie Liao</span><sup>*</sup>, Tulga Ersal<sup>†</sup>
-            <span class="pub-note">(*Equal contribution &nbsp;†Corresponding author)</span>
-          </p>
-          <p class="pub-venue">
-            <em>IEEE/RSJ International Conference on Intelligent Robots and Systems</em>
-            <span class="venue-tag">IROS 2026</span>
-          </p>
-        </div>
-      </div>
-
-      <div class="pub-item">
-        <div class="pub-year">2025</div>
-        <div class="pub-content">
-          <p class="pub-title">
-            Search-Based Path Planning in Interactive Environments among Movable Obstacles
-          </p>
-          <p class="pub-authors">
-            Zhongqiang Ren, Bunyod Suvonov, Guofei Chen, Botao He, <span class="me">Yijie Liao</span>, Cornelia Fermuller, Ji Zhang
-          </p>
-          <p class="pub-venue">
-            <em>IEEE International Conference on Robotics and Automation</em>
-            <span class="venue-tag">ICRA 2025</span>
-          </p>
-        </div>
-      </div>
-
-    </section>
-
-    <!-- ── RESEARCH ────────────────────────────────── -->
-    <section id="research">
-      <h2>Research Interests</h2>
-      <ul class="research-list">
-        <li><strong>Humanoid Manipulation</strong> — dexterous manipulation in dynamic and cluttered environments</li>
-        <li><strong>Autonomous Driving</strong> — decision-making and control under uncertainty and human interaction</li>
-        <li><strong>Safety-Critical World Models</strong> — learning models for safety-aware planning and control</li>
+        </li>
       </ul>
-    </section>
 
-  </main>
+      <nav class="section-nav" aria-label="Section navigation">
+        <a href="#about">About</a>
+        <a href="#news">News</a>
+        <a href="#education">Education</a>
+        <a href="#publications">Publications</a>
+        <a href="#research">Research</a>
+      </nav>
+    </aside>
 
-  <footer>
-    <p>Updated June 2026 &nbsp;·&nbsp; <a href="mailto:lyjie@umich.edu">lyjie@umich.edu</a></p>
-  </footer>
+    <main class="content">
+      <section id="about" class="intro-section">
+        <p class="section-kicker">About Me</p>
+        <h2>Control, learning, and robotics for interactive autonomy.</h2>
+        <div class="intro-copy">
+          <p>
+            I am an incoming PhD student in Computer Science at the
+            <strong>National University of Singapore</strong>, where I will join
+            <a href="https://linsats.github.io/" target="_blank" rel="noreferrer">Prof. Shao Lin's group</a>.
+            My research sits at the intersection of <strong>control</strong>,
+            <strong>learning</strong>, and <strong>robotics</strong>, with current interests in humanoid
+            manipulation, autonomous driving, and safety-critical systems.
+          </p>
+          <p>
+            I received dual undergraduate degrees from the <strong>UM-SJTU Joint Institute</strong>:
+            a B.Eng. in Mechanical Engineering from Shanghai Jiao Tong University and a B.S.E.
+            in Computer Engineering from the University of Michigan. I have been fortunate to work with
+            <a href="https://rap-lab.github.io/" target="_blank" rel="noreferrer">Prof. Zhongqiang Ren</a>,
+            <a href="https://websites.umich.edu/~tersal/" target="_blank" rel="noreferrer">Prof. Tulga Ersal</a>,
+            and <a href="https://icontrol.ri.cmu.edu/people/changliu.html" target="_blank" rel="noreferrer">Prof. Changliu Liu</a>.
+          </p>
+        </div>
 
+        <div class="interest-tags" aria-label="Research keywords">
+          <span>Humanoid Manipulation</span>
+          <span>Autonomous Driving</span>
+          <span>Model Predictive Control</span>
+          <span>Safety-Critical Learning</span>
+        </div>
+      </section>
+
+      <section id="news" class="content-section">
+        <div class="section-heading">
+          <p class="section-kicker">Updates</p>
+          <h2>News</h2>
+        </div>
+        <ul class="timeline-list">
+          <li>
+            <time datetime="2026-06">2026.06</time>
+            <p>Preparing to join the National University of Singapore as a Computer Science PhD student.</p>
+          </li>
+          <li>
+            <time datetime="2026">2026</time>
+            <p>Paper accepted to IROS 2026 on reinforcement-learning-guided model predictive control for autonomous racing.</p>
+          </li>
+          <li>
+            <time datetime="2025">2025</time>
+            <p>Collaborative work on search-based path planning accepted to ICRA 2025.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="education" class="content-section">
+        <div class="section-heading">
+          <p class="section-kicker">Background</p>
+          <h2>Education</h2>
+        </div>
+        <div class="education-grid">
+          <article>
+            <span class="date-range">2026 - Present</span>
+            <h3>National University of Singapore</h3>
+            <p>PhD student, Computer Science.</p>
+          </article>
+          <article>
+            <span class="date-range">Undergraduate</span>
+            <h3>UM-SJTU Joint Institute</h3>
+            <p>B.Eng. Mechanical Engineering, Shanghai Jiao Tong University.</p>
+            <p>B.S.E. Computer Engineering, University of Michigan.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="publications" class="content-section">
+        <div class="section-heading">
+          <p class="section-kicker">Selected Work</p>
+          <h2>Publications</h2>
+        </div>
+
+        <article class="publication-card">
+          <div class="pub-badge">IROS 2026</div>
+          <div class="pub-main">
+            <h3>Deep Reinforcement-Learning-Guided Model Predictive Control for Preventing Overtakes in Autonomous Racing</h3>
+            <p class="authors">Yufei Xi<sup>*</sup>, <strong>Yijie Liao</strong><sup>*</sup>, Tulga Ersal<sup>†</sup></p>
+            <p class="venue">IEEE/RSJ International Conference on Intelligent Robots and Systems</p>
+            <p class="note">* Equal contribution. † Corresponding author.</p>
+          </div>
+        </article>
+
+        <article class="publication-card">
+          <div class="pub-badge">ICRA 2025</div>
+          <div class="pub-main">
+            <h3>Search-Based Path Planning in Interactive Environments among Movable Obstacles</h3>
+            <p class="authors">Zhongqiang Ren, Bunyod Suvonov, Guofei Chen, Botao He, <strong>Yijie Liao</strong>, Cornelia Fermuller, Ji Zhang</p>
+            <p class="venue">IEEE International Conference on Robotics and Automation</p>
+          </div>
+        </article>
+      </section>
+
+      <section id="research" class="content-section">
+        <div class="section-heading">
+          <p class="section-kicker">Focus</p>
+          <h2>Research Interests</h2>
+        </div>
+        <div class="research-grid">
+          <article>
+            <h3>Humanoid Manipulation</h3>
+            <p>Dexterous robot manipulation in dynamic, contact-rich, and cluttered environments.</p>
+          </article>
+          <article>
+            <h3>Autonomous Driving</h3>
+            <p>Decision-making and control under uncertainty, competition, and human interaction.</p>
+          </article>
+          <article>
+            <h3>Safety-Critical World Models</h3>
+            <p>Learning models that support safety-aware planning, verification, and control.</p>
+          </article>
+        </div>
+      </section>
+
+      <footer>
+        <p>Updated June 2026. <a href="mailto:lyjie@umich.edu">lyjie@umich.edu</a></p>
+      </footer>
+    </main>
+  </div>
 </body>
 </html>
