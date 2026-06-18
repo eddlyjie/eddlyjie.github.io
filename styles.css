@@ -400,8 +400,9 @@ h1 {
 
 .publication-card {
   display: grid;
-  grid-template-columns: 112px minmax(0, 1fr);
+  grid-template-columns: minmax(180px, 240px) minmax(0, 1fr);
   gap: 22px;
+  align-items: start;
   padding: 20px;
   margin-bottom: 14px;
   transition: border-color 0.16s ease, transform 0.16s ease, box-shadow 0.16s ease;
@@ -417,9 +418,31 @@ h1 {
   margin-bottom: 0;
 }
 
+.pub-media {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #f2eee6;
+}
+
+.pub-media img,
+.pub-media video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.pub-main {
+  min-width: 0;
+}
+
 .pub-badge {
   width: fit-content;
   height: fit-content;
+  margin-bottom: 10px;
   padding: 7px 9px;
   border-radius: 6px;
   background: var(--accent-soft);
@@ -551,6 +574,10 @@ footer p {
   .publication-card {
     grid-template-columns: 1fr;
     gap: 8px;
+  }
+
+  .pub-media {
+    aspect-ratio: 16 / 9;
   }
 
   .pub-badge {
