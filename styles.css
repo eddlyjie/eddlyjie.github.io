@@ -143,7 +143,7 @@ h3 {
 h1 {
   margin: 6px 0 8px;
   font-family: "Source Serif 4", Georgia, serif;
-  font-size: clamp(1.85rem, 3vw, 2.45rem);
+  font-size: clamp(1.7rem, 2.6vw, 2.2rem);
   line-height: 1.04;
 }
 
@@ -556,7 +556,7 @@ footer p {
   }
 
   h1 {
-    font-size: 1.75rem;
+    font-size: 1.6rem;
   }
 
   .intro-section > h2 {
