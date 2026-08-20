@@ -137,15 +137,14 @@ p {
 h1,
 h2,
 h3 {
-  font-family: "Manrope", "Inter", sans-serif;
-  letter-spacing: -0.025em;
+  letter-spacing: 0;
 }
 
 h1 {
   margin: 6px 0 8px;
-  font-size: clamp(1.45rem, 2vw, 1.7rem);
-  line-height: 1.18;
-  font-weight: 700;
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: clamp(2.05rem, 3.4vw, 2.8rem);
+  line-height: 1.04;
 }
 
 .role {
@@ -249,12 +248,11 @@ h1 {
 
 .intro-section > h2 {
   max-width: 720px;
-  margin: 8px 0 22px;
-  font-size: clamp(1.85rem, 3.1vw, 2.65rem);
-  line-height: 1.1;
+  margin: 8px 0 24px;
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.05;
   font-weight: 700;
-  letter-spacing: -0.035em;
-  text-wrap: balance;
 }
 
 .intro-copy {
@@ -302,6 +300,7 @@ h1 {
 
 .section-heading h2 {
   margin: 0;
+  font-family: "Source Serif 4", Georgia, serif;
   font-size: 1.9rem;
   line-height: 1.1;
 }
@@ -557,11 +556,11 @@ footer p {
   }
 
   h1 {
-    font-size: 1.45rem;
+    font-size: 1.9rem;
   }
 
   .intro-section > h2 {
-    font-size: 1.75rem;
+    font-size: 1.9rem;
   }
 
   .section-heading {
