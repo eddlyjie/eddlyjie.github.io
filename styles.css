@@ -143,8 +143,8 @@ h3 {
 
 h1 {
   margin: 6px 0 8px;
-  font-size: clamp(1.95rem, 3.2vw, 2.55rem);
-  line-height: 1.08;
+  font-size: clamp(1.45rem, 2vw, 1.7rem);
+  line-height: 1.18;
   font-weight: 700;
 }
 
@@ -249,11 +249,11 @@ h1 {
 
 .intro-section > h2 {
   max-width: 720px;
-  margin: 8px 0 24px;
-  font-size: clamp(2.1rem, 4.5vw, 3.6rem);
-  line-height: 1.04;
+  margin: 8px 0 22px;
+  font-size: clamp(1.85rem, 3.1vw, 2.65rem);
+  line-height: 1.1;
   font-weight: 700;
-  letter-spacing: -0.045em;
+  letter-spacing: -0.035em;
   text-wrap: balance;
 }
 
@@ -557,11 +557,11 @@ footer p {
   }
 
   h1 {
-    font-size: 1.9rem;
+    font-size: 1.45rem;
   }
 
   .intro-section > h2 {
-    font-size: 2.2rem;
+    font-size: 1.75rem;
   }
 
   .section-heading {
