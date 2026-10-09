@@ -335,6 +335,67 @@ h1 {
   color: #344054;
 }
 
+.news-archive {
+  margin-top: 16px;
+}
+
+.news-archive summary {
+  width: fit-content;
+  padding: 6px 0;
+  color: var(--link);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.news-archive summary:hover {
+  color: var(--link-hover);
+}
+
+.news-archive summary:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+.news-less,
+.news-archive[open] .news-more {
+  display: none;
+}
+
+.news-archive[open] .news-less {
+  display: inline;
+}
+
+.news-archive .timeline-list {
+  margin-top: 12px;
+}
+
+.service-group {
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+}
+
+.service-group + .service-group {
+  margin-top: 18px;
+}
+
+.service-group h3 {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.service-group p {
+  margin: 0;
+  color: #344054;
+}
+
+.service-group p + p {
+  margin-top: 4px;
+}
+
 .education-grid,
 .research-grid {
   display: grid;
@@ -572,6 +633,7 @@ footer p {
   }
 
   .timeline-list li,
+  .service-group,
   .publication-card {
     grid-template-columns: 1fr;
     gap: 8px;
